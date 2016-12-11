@@ -50,11 +50,16 @@ table {
 /************************************************
 Navigation bar / Header
 **************************************************/
-div{
-	border:1px solid gray;
+div, span, ul, li{
+	bborder:1px solid gray;
 }
-header > div{
+
+body{
+	width: 100%;
+}
+header > nav{
 	height: 75px;
+	background-color: #8b522a;
 }
 img[src="icons/nav-logo.jpeg"]{
 	height:70px;
@@ -62,14 +67,14 @@ img[src="icons/nav-logo.jpeg"]{
 	margin-left: 12px;
 	margin-right: 12px;
 	vertical-align: middle;
-	border: 1px solid #444;
+	border: 1px solid #acb5a3;
 	border-radius: 40px;
 }
 nav h2{
 	text-decoration: none;
 	font-size: 60px;
 	font-family: 'Skranji', cursive;
-	color: #444;
+	color: #acb5a3;
 	vertical-align: middle;
 	display: inline-block;
 }
@@ -91,7 +96,137 @@ img[src="icons/shopping-cart.png"]{
 
 nav a span{
 	font-size: 18px;
-	border:1px solid red;
 	display: inline-block;
 	line-height: 70px;
+	color: #020202;
+}
+
+/************************************************
+HERO IMAGE
+**************************************************/
+.wrapper{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.hero-image{
+	display: block;
+	padding: none;
+	height: 500px;
+	width: 100%;
+	margin: 0 auto;	
+	min-width: 500px;
+	text-align: center;
+	
+}
+
+#heroImage{
+	width: inherit;
+    height:inherit;
+}
+
+
+.hero-image-text{
+	height: 60px;
+	font: 4em 'Gochi Hand', Helvetica;
+	background-color: #8b522a;
+	color: #e19b3d;
+}
+
+/**************************************************
+
+Items for sale
+
+**************************************************/
+.item_header_text{
+	font: 3em 'Gochi Hand', Helvetica;
+	background-color: #59351b;
+	color: #020202;
+}
+
+.items_for_sale{
+	height: 600px;
+	width: inherit;
+}
+
+.items_for_sale ul{
+	width: 60%;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.items_for_sale li{
+	height: 250px;
+	width: 202px;
+	display: inline-block;
+	border: 2px solid #444;
+	margin: 20px 35px;
+}
+
+.item_title{
+	display: block;
+	height: 30px;
+	width: 100%;
+	background-color: #020202;
+	color: #f7f8f6;
+	line-height: 30px;
+}
+.item_pic_box{
+	height: 185px;
+	width: 100%;
+	position: relative;
+}
+.item_pic_box img{
+	height: inherit;
+	width: 100%;
+}
+
+.price_tag{
+	position: absolute;
+	right:0;
+	background-color: #e19b3d;
+}
+
+.add_cart{
+	display: block;
+	background-color: #6A794F;
+	height: 35px;
+	width: 100%;
+	line-height: 33px;
+}
+
+.add_cart button{
+	
+}
+
+.page_nav ul{
+	margin: 20px auto;
+}
+
+.page_nav li{
+	display: inline;
+	font: 1.8em helvetica, sans-serif;
+
+}
+
+.page_nav li a{
+	text-decoration: none;
+}
+
+footer{
+	border-top: 1px solid #444;
+	height:50px;
+	width: 100%;
+	text-align: right;
+	background-color: #E19B3D;
+}
+
+footer span{
+	font: 1.2em helvetica, sans-serif;
+	margin-right: 15px;
+}
+
+footer span img{
+	vertical-align: middle;
 }
